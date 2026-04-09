@@ -1,0 +1,7 @@
+mistralai>=1.2.0
+pydantic>=2.0
+pandas>=2.0
+streamlit>=1.32
+python-dotenv>=1.0
+tabulate>=0.9
+pypdf>=4.0
