@@ -14,7 +14,7 @@ setup_logging()
 
 def main():
     client = Mistral(api_key=os.environ["MISTRAL_API_KEY"])
-    run = False
+    run = True
 
     # If a PDF path is passed as argument, process just that file
     if run == True:

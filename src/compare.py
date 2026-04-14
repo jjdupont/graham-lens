@@ -36,7 +36,7 @@ def print_ranking(df: pd.DataFrame) -> None:
     print("\n--- GrahamLens Ranking ---\n")
     for _, row in df.iterrows():
         print(f"\n=== {row['company']} ({row['year']}) — score: {row['graham_score_llm']}/100, conf: {row['confidence']:.0%} ===")
-        print(f"\n--- LEVERAGE: \n{row['leverage']}, liquidity: {row['liquidity']}, earnings: {row['stability']} {row['trend']}")
+        print(f"\n--- OVERALL: \nleveage: {row['leverage']}; liquidity: {row['liquidity']}; earnings: {row['stability']} {row['trend']}")
         print(f"\n--- MOAT: \n{row['moat_signals'] or '—'}")
         print(f"\n--- FLAGS: \n{row['red_flags'] or '—'}")
         print()

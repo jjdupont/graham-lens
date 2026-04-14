@@ -15,7 +15,7 @@ setup_logging()
 log = get_logger(__name__)
 
 st.set_page_config(page_title="GrahamLens", page_icon="📊", layout="wide")
-st.title("GrahamLens — Value Screener")
+st.title("GrahamLens: Value Screener")
 st.caption("Mistral OCR + structured extraction:  Graham scorecard dataset")
 
 api_key = os.getenv("MISTRAL_API_KEY") or st.sidebar.text_input("Mistral API Key", type="password")
